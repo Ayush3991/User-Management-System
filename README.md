@@ -1,25 +1,20 @@
-# User Management Dashboard
+# User Management (React) — Assignment
 
-A React + Firebase-based dashboard that allows users to register, upload personal details and files, and enables admin to manage user data in real-time.
+This is a simple **React** CRUD demo for managing users.  
+It uses **JSONPlaceholder** as a fake backend (assignment requirement) and stores newly created users locally in `localStorage` so they show up in the UI.
 
-## 🔧 Tech Stack
+## Features
+- Fetch users (JSONPlaceholder) and list them.
+- Create user (POST to JSONPlaceholder) — stored also in `localStorage`.
+- Update user (PUT to JSONPlaceholder) — local copy updated if present.
+- Delete user (DELETE to JSONPlaceholder) — local copy removed if present.
+- React functional components + hooks, react-router.
+- Basic validation, loading states, and error handling.
 
-- React JS (Frontend)
-- Firebase (Auth, Firestore, Storage)
-- React Router DOM
-- CSS (Responsive & Styled UI)
-
-## 🚀 Features
-
-- Firebase Auth login/signup
-- Form with profile photo & resume upload
-- Real-time Firestore data handling
-- Admin-only access to all users' data
-- Edit/Delete functionality with UI animation
-- Search & Filter (Admin view)
-
-## 📦 Run Locally
-
+## Setup (local)
 ```bash
+# install deps
 npm install
+
+# run dev
 npm start
